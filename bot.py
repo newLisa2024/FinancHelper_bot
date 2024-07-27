@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS users (
     expenses3 REAL
     )
 ''')
+print ("База данных создана")
 conn.commit()
 
 class FinancesForm(StatesGroup):
@@ -163,3 +164,5 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
+
